@@ -46,6 +46,10 @@ class Booking
   def get
     self.class.get("/booking", @sendDocument)
   end
+
+  def getbyId(id)
+    self.class.get("/booking/#{id}", @sendDocument)
+  end
 end
 
 def CreateToken(password)
@@ -57,3 +61,13 @@ def CreateToken(password)
   @createToken = Auth.new(@body)
   return @body
 end
+
+
+def GetbookingId() 
+  booking = Booking.new
+  response = booking.get
+  jobject = JSON.parse(response.body) 
+  id = jobject[0]['bookingid']
+  return id
+end
+  

@@ -1,0 +1,32 @@
+{
+	"description": "schema get booking by id",
+	"type": "object",
+	"properties": {
+		"token": {
+			"type": "string"
+		},
+		"firstname": {
+			"type": "string"
+		},
+		"lastname": {
+			"type": "string"
+		},
+		"totalprice": {
+			"type": "number"
+		},
+		"depositpaid": {
+			"type": "boolean"
+		},
+		"bookingdates": {
+			"checkin": {
+				"type": "string"
+			},
+			"checkout": {
+				"type": "string"
+			}
+		},
+		"additionalneeds": {
+			"type": "string"
+		}
+	}
+}

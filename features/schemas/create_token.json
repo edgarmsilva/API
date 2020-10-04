@@ -1,0 +1,8 @@
+{
+	"id":"file:/create_toek.json#",
+	"description": "schema CREATE Token",
+	"type": "object",
+	"properties": {
+		"token": {"type":"string"}
+	}
+}

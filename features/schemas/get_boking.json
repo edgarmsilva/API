@@ -1,0 +1,14 @@
+{
+	"description": "schema get booking ids",
+	"type": "object",
+	"properties": {
+		"object": {
+			"type": "array"
+		},
+		"items": {
+			"bookingid": {
+				"type": "number"
+			}
+		}
+	}
+}
